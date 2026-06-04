@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO primário -->
+<title>LD Laces & Perucas | Perucas & Prótese Capilar Premium</title>
+<meta name="description" content="Perucas de cabelo humano e sintético de altíssima qualidade. Lace Front HD, Full Lace, Prótese Capilar. Beleza que realça sua essência. Troca em 30 dias.">
+<meta name="keywords" content="perucas, prótese capilar, lace front, full lace, cabelo humano, peruca sintética, peruca cacheada, peruca lisa, LD Laces e Perucas, laces e perucas">
+<meta name="author" content="LD Laces & Perucas">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://ldlacesperucas.com.br/">
+
+<!-- Open Graph (WhatsApp, Facebook, Instagram) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ldlacesperucas.com.br/">
+<meta property="og:title" content="LD Laces & Perucas | Perucas & Prótese Capilar Premium">
+<meta property="og:description" content="Perucas de altíssima qualidade, cabelo humano e sintético premium. Beleza que realça sua essência. Lace Front HD, Full Lace, Prótese Capilar.">
+<meta property="og:image" content="img/logo_sem_fundo.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="LD Laces & Perucas">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LD Laces & Perucas | Perucas & Prótese Capilar Premium">
+<meta name="twitter:description" content="Perucas de altíssima qualidade, cabelo humano e sintético premium. Beleza que realça sua essência.">
+<meta name="twitter:image" content="img/logo_sem_fundo.png">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="img/logo_sem_fundo.png">
+<link rel="apple-touch-icon" href="img/logo_sem_fundo.png">
+<meta name="theme-color" content="#0a0a0a">
+
+<!-- Google Analytics — substitua G-XXXXXXXXXX pelo ID real em analytics.google.com -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+
+<!-- LGPD COOKIE BANNER -->
+<div class="lgpd-banner" id="lgpdBanner">
+  <div class="lgpd-inner">
+    <div class="lgpd-text">
+      <strong>🍪 Utilizamos cookies</strong>
+      <p>Usamos cookies para melhorar sua experiência, personalizar conteúdo e analisar o tráfego. Ao continuar navegando, você concorda com nossa <a onclick="goPage('privacidade')">Política de Privacidade</a> conforme a LGPD.</p>
+    </div>
+    <div class="lgpd-actions">
+      <button class="lgpd-btn-recusar" onclick="lgpdRecusar()">Recusar</button>
+      <button class="lgpd-btn-aceitar" onclick="lgpdAceitar()">Aceitar Cookies</button>
+    </div>
+  </div>
+</div>
+
+<!-- WHATSAPP -->
+<div class="wa-btn" onclick="toggleWa()" title="Chat no WhatsApp">💬</div>
+<div class="wa-popup" id="waPopup">
+  <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:.75rem">
+    <div>
+      <div class="wa-popup-title">💚 Fale Conosco</div>
+      <div style="font-size:.68rem;color:var(--gray-400)">Resposta em minutos</div>
+    </div>
+    <button class="x-btn" onclick="toggleWa()" style="font-size:1rem">✕</button>
+  </div>
+  <p class="wa-popup-text">Olá! Precisa de ajuda para escolher sua peruca ideal? Nossa equipe está pronta para te atender!</p>
+  <button class="wa-popup-btn" onclick="openWA()">Iniciar Conversa</button>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-wrap">
+    <div class="logo" onclick="goPage('home')" style="display:flex;align-items:center;gap:.6rem">
+      <img src="img/logo_sem_fundo.png" alt="LD Laces & Perucas" class="nav-logo-img">
+      <span class="nav-brand-name">LD <em>Laces & Perucas</em></span>
+    </div>
+    <ul class="nav-links">
+      <li><a onclick="goPage('home')" id="nl-home" class="active">Início</a></li>
+      <li><a onclick="goPage('produtos')" id="nl-produtos">Perucas</a></li>
+      <li><a onclick="goPage('protese')" id="nl-protese">Prótese Capilar</a></li>
+      <li><a onclick="goPage('inspire')" id="nl-inspire">Inspire-se</a></li>
+      <li><a onclick="goPage('sobre')" id="nl-sobre">Sobre</a></li>
+      <li><a onclick="goPage('faq')" id="nl-faq">FAQ</a></li>
+      <li><a onclick="goPage('contato')" id="nl-contato">Contato</a></li>
+      <li><a onclick="goPage('admin')" id="nl-admin" class="hidden">Admin</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="nav-hamburger" id="navHamburger" onclick="toggleMobileNav()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-search">
+        <input type="text" placeholder="Buscar..." id="searchQ" oninput="liveSearch()">
+        <span class="nav-search-icon">🔍</span>
+      </div>
+      <button class="nav-icon-btn" onclick="openAuth()" title="Minha Conta">
+        👤<span class="nav-badge hidden" id="authBadge">✓</span>
+      </button>
+      <button class="nav-icon-btn" onclick="goPage('wishlist')" title="Favoritos">
+        🤍<span class="nav-badge hidden" id="wishBadge">0</span>
+      </button>
+      <button class="btn-cart" onclick="openCart()">
+        🛍️ <span id="cartCount">0</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE NAV DRAWER -->
+<div class="nav-drawer" id="navDrawer">
+  <div class="nav-drawer-search">
+    <span>🔍</span>
+    <input type="text" placeholder="Buscar produtos..." oninput="liveSearch(this.value)" id="drawerSearchQ">
+  </div>
+  <a onclick="goPage('home');closeMobileNav()">Início</a>
+  <a onclick="goPage('produtos');closeMobileNav()">Perucas</a>
+  <a onclick="goPage('protese');closeMobileNav()">Prótese Capilar</a>
+  <a onclick="goPage('inspire');closeMobileNav()">Inspire-se</a>
+  <a onclick="goPage('sobre');closeMobileNav()">Sobre</a>
+  <a onclick="goPage('faq');closeMobileNav()">FAQ</a>
+  <a onclick="goPage('contato');closeMobileNav()">Contato</a>
+</div>
+
+<!-- ═══════════ PAGE: HOME ═══════════ -->
+<div class="page active" id="page-home">
+
+  <!-- HERO -->
+  <section class="hero">
+    <video class="hero-video-bg" autoplay muted loop playsinline>
+      <source src="https://videos.pexels.com/video-files/7281027/7281027-hd_1920_1080_25fps.mp4" type="video/mp4">
+      <source src="https://videos.pexels.com/video-files/7281027/7281027-uhd_2732_1440_25fps.mp4" type="video/mp4">
+    </video>
+    <div class="hero-video-overlay"></div>
+    <div class="hero-grid-bg"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-eyebrow animate">Nova Coleção 2025</div>
+        <h1 class="hero-h1 animate d1">Arte<br><em>em cada</em><br>fio</h1>
+        <p class="hero-sub animate d2">Perucas de altíssima qualidade, cabelos naturais e sintéticos premium. Transforme seu visual com elegância e confiança absoluta.</p>
+        <div class="hero-actions animate d3">
+          <button class="btn-white" onclick="goPage('produtos')">Ver Coleção</button>
+          <button class="btn-outline-white" onclick="goPage('sobre')">Nossa história</button>
+        </div>
+      </div>
+      <div class="hero-visual animate d2">
+        <div class="hero-card-main">
+          <img src="img/logo_sem_fundo.png" alt="Laces & Perucas" class="hero-logo-img">
+        </div>
+        <div class="hero-stats-row">
+          <div class="hero-stat"><div class="hero-stat-n">50+</div><div class="hero-stat-l">Produtos</div></div>
+          <div class="hero-stat"><div class="hero-stat-n">1k</div><div class="hero-stat-l">Clientes</div></div>
+          <div class="hero-stat"><div class="hero-stat-n">4.9★</div><div class="hero-stat-l">Avaliação</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee"><div class="marquee-track" id="marqueeEl"></div></div>
+
+  <!-- PRODUTOS DESTAQUE -->
+  <div class="section">
+    <div style="margin-bottom:3.5rem;text-align:center">
+      <div class="s-tag">Mais Vendidos</div>
+      <h2 class="s-title">Nossa <em>Coleção</em></h2>
+    </div>
+
+    <!-- Sub-seção: Perucas -->
+    <div style="margin-bottom:4rem">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:2rem">
+        <div>
+          <div class="s-tag" style="margin-bottom:.3rem">Categoria</div>
+          <h3 style="font-family:var(--font-display);font-size:1.7rem;font-weight:400;margin:0">Perucas</h3>
+        </div>
+        <button class="btn-sm primary" onclick="goPage('produtos')">Ver Todas →</button>
+      </div>
+      <div class="products-grid" id="homeProdGridPerucas"></div>
+    </div>
+
+    <!-- Sub-seção: Prótese Capilar -->
+    <div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:2rem">
+        <div>
+          <div class="s-tag" style="margin-bottom:.3rem">Categoria</div>
+          <h3 style="font-family:var(--font-display);font-size:1.7rem;font-weight:400;margin:0">Prótese Capilar</h3>
+        </div>
+        <button class="btn-sm primary" onclick="goPage('protese')">Ver Todas →</button>
+      </div>
+      <div class="products-grid" id="homeProdGridProtese"></div>
+    </div>
+  </div>
+
+  <!-- FEATURED -->
+  <div class="featured-bg">
+    <div class="featured-in">
+      <div>
+        <div class="s-tag" style="color:var(--gold)">Destaque</div>
+        <h2 class="s-title" style="color:var(--white)">Glamour <em>Lace</em><br>Front HD</h2>
+        <p style="color:var(--gray-400);font-size:.88rem;line-height:1.85;margin:1.5rem 0">Nossa peruca mais vendida, com lace invisível HD que se adapta ao seu tom de pele. Cabelo 100% humano com 18 meses de durabilidade garantida.</p>
+        <div class="feat-specs">
+          <div class="spec"><div class="spec-l">Comprimento</div><div class="spec-v">60cm</div></div>
+          <div class="spec"><div class="spec-l">Fibra</div><div class="spec-v">Natural 100%</div></div>
+          <div class="spec"><div class="spec-l">Densidade</div><div class="spec-v">180%</div></div>
+          <div class="spec"><div class="spec-l">Rating</div><div class="spec-v">4.9 ★</div></div>
+        </div>
+        <div style="display:flex;gap:1rem">
+          <button class="btn-white" onclick="openProductModal(0)">Ver Produto</button>
+          <button class="btn-outline-white" onclick="addToCart(0);toast('✨ Adicionado ao carrinho!')">+ Carrinho</button>
+        </div>
+      </div>
+      <div class="feat-img">
+        <img src="img/placeholder.svg" alt="Glamour Lace Front HD" style="width:100%;max-width:380px;object-fit:contain;filter:drop-shadow(0 0 32px rgba(201,168,76,0.2))" onerror="this.outerHTML='<div class=feat-emoji>👩‍🦰</div>'">
+      </div>
+    </div>
+  </div>
+
+  <!-- TESTIMONIALS -->
+  <div style="background:var(--gray-50);padding:7rem 0">
+    <div class="section-sm">
+      <div class="s-tag">Depoimentos</div>
+      <h2 class="s-title" style="margin-bottom:3.5rem">O que dizem nossas <em>clientes</em></h2>
+      <div class="testi-grid" id="testiGrid"></div>
+    </div>
+  </div>
+
+  <!-- BLOG PREVIEW -->
+  <div class="section">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:3.5rem">
+      <div><div class="s-tag">Inspire-se</div><h2 class="s-title">Encontre seu <em>Look</em></h2></div>
+      <button class="btn-sm primary" onclick="goPage('inspire')">Ver Lookbook →</button>
+    </div>
+    <div class="lookbook-preview-grid" id="lookbookPreview"></div>
+  </div>
+
+  <!-- NEWSLETTER -->
+  <div class="newsletter-bg">
+    <div class="newsletter-in">
+      <div class="s-tag" style="justify-content:center">Newsletter</div>
+      <h2 class="s-title" style="color:var(--white)">Novidades &<br><em>ofertas exclusivas</em></h2>
+      <p style="color:var(--gray-400);font-size:.85rem;margin-top:1rem">Cadastre-se e ganhe 15% OFF na primeira compra com o cupom <strong style="color:var(--gold)">BEMVINDA</strong> + acesso antecipado às coleções.</p>
+      <div class="nl-form">
+        <input type="email" class="nl-input" placeholder="seu@email.com" id="nlEmail">
+        <button class="nl-btn" onclick="subscribe()">Cadastrar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div>
+        <div style="display:flex;align-items:center;gap:.6rem;margin-bottom:.75rem">
+          <img src="img/logo_sem_fundo.png" alt="LD Laces & Perucas" style="height:52px;width:auto;filter:brightness(1.15)">
+          <span class="footer-logo" style="font-size:1.1rem;letter-spacing:.05em">LD <em style="font-style:italic;color:var(--gold)">Laces & Perucas</em></span>
+        </div>
+        <p class="footer-about">Beleza que realça sua essência. Perucas e próteses capilares de alta qualidade para todas as mulheres.</p>
+        <div class="footer-social">
+          <div class="social-btn" onclick="openWA()" title="WhatsApp">💬</div>
+          <div class="social-btn" onclick="window.open('https://instagram.com','_blank')" title="Instagram">📸</div>
+          <div class="social-btn" onclick="window.open('https://facebook.com','_blank')" title="Facebook">💙</div>
+          <div class="social-btn" onclick="window.open('https://tiktok.com','_blank')" title="TikTok">🎵</div>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Coleção</h4><ul><li><a onclick="goPage('produtos')">Cabelo Natural</a></li><li><a onclick="goPage('produtos')">Sintéticas</a></li><li><a onclick="goPage('produtos')">Lace Front</a></li><li><a onclick="goPage('produtos')">Full Lace</a></li><li><a onclick="goPage('produtos')">Promoções</a></li></ul></div>
+      <div class="footer-col"><h4>Ajuda</h4><ul><li><a onclick="goPage('faq')">FAQ</a></li><li><a onclick="goPage('comousar')">Como Usar</a></li><li><a onclick="goPage('rastrear')">Rastrear Pedido</a></li><li><a onclick="goPage('trocas')">Trocas e Devoluções</a></li><li><a onclick="goPage('privacidade')">Política de Privacidade</a></li><li><a onclick="goPage('contato')">Contato</a></li></ul></div>
+      <div class="footer-col"><h4>Contato</h4><ul>
+        <li><a href="https://wa.me/5519994368778" target="_blank" rel="noopener">📱 (19) 99436-8778</a></li>
+        <li><a href="mailto:Rafaelmuller111222333444@gmail.com">✉️ Rafaelmuller111222333444@gmail.com</a></li>
+        <li><a href="https://wa.me/5519994368778" target="_blank" rel="noopener">🕐 Seg–Sab, 9h–18h</a></li>
+        <li style="margin-top:.75rem;color:var(--gray-400);font-size:.75rem">Chave PIX (telefone):</li>
+        <li style="color:var(--gold);font-size:.82rem;font-weight:500">(19) 99436-8778</li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2025 LD Laces & Perucas. Todos os direitos reservados.</span>
+      <div class="payment-badges">
+        <span class="pay-badge">Pix</span><span class="pay-badge">Visa</span><span class="pay-badge">Master</span><span class="pay-badge">Boleto</span>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- ═══════════ PAGE: PRODUTOS ═══════════ -->
+<div class="page" id="page-produtos" style="padding-top:70px;min-height:100vh">
+  <div class="produtos-layout">
+
+    <!-- Overlay mobile sidebar -->
+    <div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
+
+    <!-- SIDEBAR FILTROS -->
+    <aside class="prod-sidebar" id="prodSidebar">
+      <div class="sidebar-hd">
+        <span class="sidebar-title">Filtros</span>
+        <button class="sidebar-clear" onclick="clearFilters()">Limpar tudo</button>
+        <button class="sidebar-close-btn" onclick="closeSidebar()">✕</button>
+      </div>
+
+      <!-- Busca -->
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Busca</div>
+        <div class="sidebar-search">
+          <input type="text" id="sidebarSearch" placeholder="Buscar produto..." oninput="liveSearch()">
+          <span>🔍</span>
+        </div>
+      </div>
+
+      <!-- Ordenar -->
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Ordenar por</div>
+        <div class="sidebar-radio-group">
+          <label class="sidebar-radio"><input type="radio" name="sort" value="default" checked onchange="sortProducts()"> Relevância</label>
+          <label class="sidebar-radio"><input type="radio" name="sort" value="price-asc" onchange="sortProducts()"> Menor Preço</label>
+          <label class="sidebar-radio"><input type="radio" name="sort" value="price-desc" onchange="sortProducts()"> Maior Preço</label>
+          <label class="sidebar-radio"><input type="radio" name="sort" value="rating" onchange="sortProducts()"> Melhor Avaliados</label>
+          <label class="sidebar-radio"><input type="radio" name="sort" value="name" onchange="sortProducts()"> Nome A-Z</label>
+        </div>
+      </div>
+
+      <!-- Categoria -->
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Categoria</div>
+        <div id="prodFilters" class="sidebar-radio-group"></div>
+      </div>
+
+      <!-- Faixa de Preço -->
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Faixa de Preço</div>
+        <div class="price-range-wrap">
+          <div class="price-range-values">
+            <span>R$ <span id="priceMin">0</span></span>
+            <span>R$ <span id="priceMax">2500</span></span>
+          </div>
+          <input type="range" class="price-slider" id="sliderMin" min="0" max="2500" value="0" step="50" oninput="updatePriceRange()">
+          <input type="range" class="price-slider" id="sliderMax" min="0" max="2500" value="2500" step="50" oninput="updatePriceRange()">
+          <div class="price-track"><div class="price-track-fill" id="priceTrackFill"></div></div>
+        </div>
+      </div>
+
+      <!-- Disponibilidade -->
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Disponibilidade</div>
+        <label class="sidebar-check"><input type="checkbox" id="filterInStock" onchange="renderProdPage()"> Apenas em estoque</label>
+      </div>
+    </aside>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <div class="prod-main">
+      <div class="prod-main-header">
+        <div>
+          <div class="s-tag" style="margin-bottom:.25rem">Coleção Completa</div>
+          <h1 class="s-title" style="font-size:2rem;margin:0">Todas as <em>Perucas</em></h1>
+        </div>
+        <div class="prod-main-actions">
+          <span id="prodCount" style="font-size:.78rem;color:var(--gray-400)"></span>
+          <button class="filter-toggle-btn" onclick="openSidebar()">⚙️ Filtros</button>
+        </div>
+      </div>
+      <div class="products-grid" id="prodGrid"></div>
+      <div id="prodEmpty" class="prod-empty hidden">
+        <div style="font-size:3rem;margin-bottom:1rem">🔍</div>
+        <p>Nenhum produto encontrado com esses filtros.</p>
+        <button class="btn-sm primary" onclick="clearFilters()" style="margin-top:1rem">Limpar filtros</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══════════ PAGE: PRÓTESE CAPILAR ═══════════ -->
+<div class="page" id="page-protese" style="padding-top:70px;min-height:100vh">
+
+  <!-- BANNER HERO -->
+  <div class="protese-hero">
+    <div class="protese-hero-glow"></div>
+    <div class="protese-hero-inner">
+      <div class="s-tag" style="color:var(--gold);justify-content:center">Tecnologia Capilar</div>
+      <h1 class="protese-hero-title">Prótese <em>Capilar</em></h1>
+      <p class="protese-hero-sub">Soluções em micropele, lace e híbrida para reposição capilar com naturalidade absoluta. Cada peça feita com tecnologia de ponta e atenção aos detalhes.</p>
+      <div class="protese-hero-badges">
+        <span class="protese-badge">💧 Micropele</span>
+        <span class="protese-badge">🔬 Lace HD</span>
+        <span class="protese-badge">🔀 Híbrida</span>
+        <span class="protese-badge">💈 Afro</span>
+        <span class="protese-badge">👨 Masculina</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- FILTROS + GRID -->
+  <div class="produtos-layout">
+
+    <div class="sidebar-overlay" id="proteseSidebarOverlay" onclick="closeProteseSidebar()"></div>
+
+    <aside class="prod-sidebar" id="proteseSidebar">
+      <div class="sidebar-hd">
+        <span class="sidebar-title">Filtros</span>
+        <button class="sidebar-clear" onclick="clearProteseFilters()">Limpar tudo</button>
+        <button class="sidebar-close-btn" onclick="closeProteseSidebar()">✕</button>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Busca</div>
+        <div class="sidebar-search">
+          <input type="text" id="proteseSidebarSearch" placeholder="Buscar prótese..." oninput="renderProtesePage()">
+          <span>🔍</span>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Ordenar por</div>
+        <div class="sidebar-radio-group">
+          <label class="sidebar-radio"><input type="radio" name="proteseSort" value="default" checked onchange="renderProtesePage()"> Relevância</label>
+          <label class="sidebar-radio"><input type="radio" name="proteseSort" value="price-asc" onchange="renderProtesePage()"> Menor Preço</label>
+          <label class="sidebar-radio"><input type="radio" name="proteseSort" value="price-desc" onchange="renderProtesePage()"> Maior Preço</label>
+          <label class="sidebar-radio"><input type="radio" name="proteseSort" value="rating" onchange="renderProtesePage()"> Melhor Avaliados</label>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Tipo</div>
+        <div id="proteseFilters" class="sidebar-radio-group"></div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Faixa de Preço</div>
+        <div class="price-range-wrap">
+          <div class="price-range-values">
+            <span>R$ <span id="protMinLabel">0</span></span>
+            <span>R$ <span id="protMaxLabel">2500</span></span>
+          </div>
+          <input type="range" class="price-slider" id="protSliderMin" min="0" max="2500" value="0" step="50" oninput="updateProtesePriceRange()">
+          <input type="range" class="price-slider" id="protSliderMax" min="0" max="2500" value="2500" step="50" oninput="updateProtesePriceRange()">
+          <div class="price-track"><div class="price-track-fill" id="protPriceTrackFill"></div></div>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Disponibilidade</div>
+        <label class="sidebar-check"><input type="checkbox" id="proteseFilterInStock" onchange="renderProtesePage()"> Apenas em estoque</label>
+      </div>
+    </aside>
+
+    <div class="prod-main">
+      <div class="prod-main-header">
+        <div>
+          <div class="s-tag" style="margin-bottom:.25rem">Reposição Capilar</div>
+          <h1 class="s-title" style="font-size:2rem;margin:0">Todas as <em>Próteses</em></h1>
+        </div>
+        <div class="prod-main-actions">
+          <span id="proteseCount" style="font-size:.78rem;color:var(--gray-400)"></span>
+          <button class="filter-toggle-btn" onclick="openProteseSidebar()">⚙️ Filtros</button>
+        </div>
+      </div>
+      <div id="proteseGrid" class="products-grid"></div>
+      <div id="proteseEmpty" class="prod-empty hidden">
+        <div style="font-size:3rem;margin-bottom:1rem">🔍</div>
+        <p>Nenhuma prótese encontrada com esses filtros.</p>
+        <button class="btn-sm primary" onclick="clearProteseFilters()" style="margin-top:1rem">Limpar filtros</button>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- ═══════════ PAGE: INSPIRE-SE ═══════════ -->
+<div class="page" id="page-inspire" style="padding-top:70px;min-height:100vh">
+
+  <!-- HERO INSPIRE -->
+  <div style="background:var(--black);padding:5rem 0 4rem;position:relative;overflow:hidden">
+    <div style="position:absolute;top:-80px;right:-80px;width:500px;height:500px;background:radial-gradient(ellipse,rgba(201,168,76,.12),transparent 65%);pointer-events:none"></div>
+    <div style="max-width:700px;margin:0 auto;padding:0 2rem;text-align:center;position:relative;z-index:1">
+      <div class="s-tag" style="justify-content:center;color:var(--gold)">Inspire-se</div>
+      <h1 style="font-family:var(--font-display);font-size:3.5rem;font-weight:300;color:var(--white);line-height:1.1;margin-bottom:1rem">Descubra seu <em style="color:var(--gold)">look</em> perfeito</h1>
+      <p style="color:var(--gray-400);font-size:.88rem;line-height:1.8;margin-bottom:2rem">Use o quiz para encontrar a peruca ideal ou explore o lookbook por ocasião.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+        <button class="btn-white" onclick="showInspireTab('quiz')">🎯 Fazer o Quiz</button>
+        <button class="btn-outline-white" onclick="showInspireTab('lookbook')">📸 Ver Lookbook</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TABS -->
+  <div class="inspire-tabs">
+    <button class="inspire-tab active" id="itab-quiz" onclick="showInspireTab('quiz')">🎯 Quiz de Estilo</button>
+    <button class="inspire-tab" id="itab-lookbook" onclick="showInspireTab('lookbook')">📸 Lookbook</button>
+  </div>
+
+  <!-- ── QUIZ ── -->
+  <div id="inspire-quiz" class="inspire-panel active">
+    <div class="section" style="max-width:680px;margin:0 auto">
+
+      <!-- Barra de progresso -->
+      <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="quizProgressFill"></div></div>
+      <div style="font-size:.72rem;color:var(--gray-400);text-align:right;margin-bottom:2rem" id="quizStepLabel">Passo 1 de 3</div>
+
+      <!-- PASSO 1 -->
+      <div class="quiz-step" id="qstep-1">
+        <div class="quiz-question">Para qual ocasião você mais usa?</div>
+        <div class="quiz-options">
+          <div class="quiz-opt" onclick="quizSelect(1,'trabalho')">
+            <span class="quiz-opt-icon">💼</span>
+            <div class="quiz-opt-label">Trabalho & Dia a Dia</div>
+            <div class="quiz-opt-sub">Looks profissionais e discretos</div>
+          </div>
+          <div class="quiz-opt" onclick="quizSelect(1,'festa')">
+            <span class="quiz-opt-icon">✨</span>
+            <div class="quiz-opt-label">Festas & Eventos</div>
+            <div class="quiz-opt-sub">Impacto e glamour para ocasiões especiais</div>
+          </div>
+          <div class="quiz-opt" onclick="quizSelect(1,'casual')">
+            <span class="quiz-opt-icon">🌿</span>
+            <div class="quiz-opt-label">Uso Casual</div>
+            <div class="quiz-opt-sub">Conforto e praticidade no cotidiano</div>
+          </div>
+          <div class="quiz-opt" onclick="quizSelect(1,'tratamento')">
+            <span class="quiz-opt-icon">💗</span>
+            <div class="quiz-opt-label">Tratamento Capilar</div>
+            <div class="quiz-opt-sub">Alopecia, quimioterapia ou reposição</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PASSO 2 -->
+      <div class="quiz-step hidden" id="qstep-2">
+        <div class="quiz-question">O que é mais importante para você?</div>
+        <div class="quiz-options">
+          <div class="quiz-opt" onclick="quizSelect(2,'naturalidade')">
+            <span class="quiz-opt-icon">🌸</span>
+            <div class="quiz-opt-label">Aparência Natural</div>
+            <div class="quiz-opt-sub">Que ninguém perceba que é peruca</div>
+          </div>
+          <div class="quiz-opt" onclick="quizSelect(2,'volume')">
+            <span class="quiz-opt-icon">💇‍♀️</span>
+            <div class="quiz-opt-label">Volume & Movimento</div>
+            <div class="quiz-opt-sub">Cabelo cheio e com vida</div>
+          </div>
+          <div class="quiz-opt" onclick="quizSelect(2,'durabilidade')">
+            <span class="quiz-opt-icon">⏳</span>
+            <div class="quiz-opt-label">Longa Durabilidade</div>
+            <div class="quiz-opt-sub">Investimento que dura anos</div>
+          </div>
+          <div class="quiz-opt" onclick="quizSelect(2,'praticidade')">
+            <span class="quiz-opt-icon">⚡</span>
+            <div class="quiz-opt-label">Praticidade</div>
+            <div class="quiz-opt-sub">Fácil de colocar e cuidar</div>
+          </div>
+        </div>
+        <button class="quiz-back" onclick="quizBack(2)">← Voltar</button>
+      </div>
+
+      <!-- PASSO 3 -->
+      <div class="quiz-step hidden" id="qstep-3">
+        <div class="quiz-question">Qual é sua faixa de investimento?</div>
+        <div class="quiz-options">
+          <div class="quiz-opt" onclick="quizSelect(3,'low')">
+            <span class="quiz-opt-icon">💰</span>
+            <div class="quiz-opt-label">Até R$ 650</div>
+            <div class="quiz-opt-sub">Ótima relação custo-benefício</div>
+          </div>
+          <div class="quiz-opt" onclick="quizSelect(3,'mid')">
+            <span class="quiz-opt-icon">💎</span>
+            <div class="quiz-opt-label">R$ 650 – R$ 1.000</div>
+            <div class="quiz-opt-sub">Qualidade premium acessível</div>
+          </div>
+          <div class="quiz-opt" onclick="quizSelect(3,'high')">
+            <span class="quiz-opt-icon">👑</span>
+            <div class="quiz-opt-label">Acima de R$ 1.000</div>
+            <div class="quiz-opt-sub">O melhor que existe no mercado</div>
+          </div>
+        </div>
+        <button class="quiz-back" onclick="quizBack(3)">← Voltar</button>
+      </div>
+
+      <!-- RESULTADO -->
+      <div class="quiz-step hidden" id="qstep-result">
+        <div style="text-align:center;margin-bottom:2rem">
+          <div style="font-size:2.5rem;margin-bottom:.75rem">🎉</div>
+          <div class="quiz-question" style="margin-bottom:.5rem">Encontramos a peruca ideal para você!</div>
+          <p style="font-size:.85rem;color:var(--gray-600)">Com base nas suas respostas, nossa recomendação é:</p>
+        </div>
+        <div class="quiz-result-card" id="quizResultCard"></div>
+        <div style="text-align:center;margin-top:2rem">
+          <button class="btn-sm primary" onclick="quizReset()" style="margin-right:.5rem">🔄 Refazer Quiz</button>
+          <button class="btn-sm" onclick="goPage('produtos')">Ver Todos os Produtos</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── LOOKBOOK ── -->
+  <div id="inspire-lookbook" class="inspire-panel hidden">
+
+    <!-- Filtro de ocasião -->
+    <div class="lookbook-filter-bar">
+      <button class="lookbook-filter active" id="lf-todos" onclick="lookbookFilter('todos')">Todos os Looks</button>
+      <button class="lookbook-filter" id="lf-trabalho" onclick="lookbookFilter('trabalho')">💼 Trabalho</button>
+      <button class="lookbook-filter" id="lf-festa" onclick="lookbookFilter('festa')">✨ Festas</button>
+      <button class="lookbook-filter" id="lf-casual" onclick="lookbookFilter('casual')">🌿 Casual</button>
+      <button class="lookbook-filter" id="lf-protese" onclick="lookbookFilter('protese')">💗 Prótese</button>
+    </div>
+
+    <div class="section" style="padding-top:2rem">
+      <div class="lookbook-grid" id="lookbookGrid"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- ═══════════ PAGE: FAQ ═══════════ -->
+<div class="page" id="page-faq" style="padding-top:70px;min-height:100vh">
+  <div class="section" style="max-width:900px;margin:0 auto">
+    <div class="s-tag">Perguntas Frequentes</div>
+    <h1 class="s-title" style="margin-bottom:3rem">Tire suas <em>dúvidas</em></h1>
+    <div class="faq-list" id="faqList"></div>
+  </div>
+</div>
+
+<!-- ═══════════ PAGE: RASTREAR ═══════════ -->
+<div class="page" id="page-rastrear" style="padding-top:70px;min-height:100vh">
+  <div class="section" style="max-width:700px;margin:0 auto">
+    <div class="s-tag">Rastreamento</div>
+    <h1 class="s-title" style="margin-bottom:2rem">Rastrear <em>Pedido</em></h1>
+    <div class="tracking-input-row">
+      <input type="text" class="tracking-input" id="trackInput" placeholder="Digite o número do pedido (ex: LH-ABC123)">
+      <button class="tracking-btn" onclick="trackOrder()">Rastrear</button>
+    </div>
+    <div id="trackResult" class="hidden">
+      <div style="background:var(--gray-50);padding:1.5rem;margin-bottom:2rem;border-left:3px solid var(--gold)">
+        <div style="font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-400);margin-bottom:.25rem">Pedido</div>
+        <div style="font-family:var(--font-display);font-size:1.3rem" id="trackOrderNum"></div>
+        <div style="font-size:.78rem;color:var(--gray-600);margin-top:.25rem" id="trackOrderInfo"></div>
+      </div>
+      <div class="track-timeline" id="trackTimeline"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ PAGE: TROCAS ═══════════ -->
+<div class="page" id="page-trocas" style="padding-top:70px;min-height:100vh">
+  <div class="section" style="max-width:700px;margin:0 auto">
+    <div class="s-tag">Pós-venda</div>
+    <h1 class="s-title" style="margin-bottom:2rem">Trocas & <em>Devoluções</em></h1>
+    <div style="background:var(--gray-50);padding:2rem;margin-bottom:2.5rem">
+      <h3 style="font-family:var(--font-display);font-size:1.3rem;margin-bottom:1rem">Nossa Política</h3>
+      <ul style="font-size:.85rem;color:var(--gray-600);line-height:2.2;padding-left:1.25rem">
+        <li>Troca ou devolução em até <strong>30 dias</strong> após recebimento</li>
+        <li>Produto deve estar com embalagem original intacta</li>
+        <li>Frete de devolução por conta da LD Laces & Perucas</li>
+        <li>Reembolso em até <strong>5 dias úteis</strong></li>
+        <li>Troca disponível para qualquer produto do catálogo</li>
+      </ul>
+    </div>
+    <h3 style="font-family:var(--font-display);font-size:1.4rem;margin-bottom:1.5rem">Solicitar Troca/Devolução</h3>
+    <div class="fg"><label>Número do Pedido</label><input type="text" placeholder="LH-XXXXXX"></div>
+    <div class="fg"><label>E-mail</label><input type="email" placeholder="seu@email.com"></div>
+    <div class="fg"><label>Motivo</label><select><option>Selecione...</option><option>Tamanho errado</option><option>Cor diferente do esperado</option><option>Produto com defeito</option><option>Não gostei</option><option>Outro</option></select></div>
+    <div class="fg"><label>Deseja</label><select><option>Troca por outro produto</option><option>Reembolso completo</option><option>Crédito na loja</option></select></div>
+    <div class="fg"><label>Detalhes</label><textarea style="border:1px solid var(--gray-200);padding:11px 13px;font-size:.88rem;outline:none;resize:vertical;min-height:100px" placeholder="Descreva o motivo..."></textarea></div>
+    <button class="step-btn" style="max-width:280px" onclick="toast('📬 Solicitação enviada! Retornaremos em até 24h.')">Enviar Solicitação</button>
+  </div>
+</div>
+
+<!-- ═══════════ PAGE: SOBRE ═══════════ -->
+<div class="page" id="page-sobre" style="padding-top:70px;min-height:100vh">
+  <div style="background:var(--black);padding:8rem 0 6rem">
+    <div style="max-width:700px;margin:0 auto;padding:0 2rem;text-align:center">
+      <div class="s-tag" style="justify-content:center;color:var(--gold)">Nossa História</div>
+      <h1 style="font-family:var(--font-display);font-size:4rem;font-weight:300;color:var(--white);line-height:1.1;margin-bottom:1.5rem">Nascemos para <em style="color:var(--gold)">transformar</em></h1>
+      <p style="font-size:.9rem;color:var(--gray-400);line-height:1.9">A LD Laces & Perucas nasceu da vontade de oferecer perucas e próteses capilares de qualidade internacional para mulheres brasileiras. Acreditamos que toda mulher merece se sentir confiante e linda todos os dias — beleza que realça sua essência.</p>
+    </div>
+  </div>
+  <div class="section" style="max-width:900px;margin:0 auto">
+    <div class="sobre-vals-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;margin-bottom:5rem">
+      <div>
+        <h2 style="font-family:var(--font-display);font-size:2.5rem;margin-bottom:1rem">Nossos <em>Valores</em></h2>
+        <p style="font-size:.85rem;color:var(--gray-600);line-height:1.9">Cada peruca é selecionada com critérios rigorosos de qualidade. Trabalhamos com os melhores fornecedores da Ásia e América Latina para garantir produtos que superam expectativas.</p>
+      </div>
+      <div class="sobre-vals-inner" style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+        <div style="background:var(--gray-50);padding:1.5rem;border-left:2px solid var(--gold)"><div style="font-size:1.5rem;margin-bottom:.5rem">🌿</div><div style="font-size:.82rem;font-weight:500;margin-bottom:.25rem">Sustentável</div><div style="font-size:.75rem;color:var(--gray-600)">Embalagens eco-friendly</div></div>
+        <div style="background:var(--gray-50);padding:1.5rem;border-left:2px solid var(--gold)"><div style="font-size:1.5rem;margin-bottom:.5rem">💎</div><div style="font-size:.82rem;font-weight:500;margin-bottom:.25rem">Premium</div><div style="font-size:.75rem;color:var(--gray-600)">Materiais de excelência</div></div>
+        <div style="background:var(--gray-50);padding:1.5rem;border-left:2px solid var(--gold)"><div style="font-size:1.5rem;margin-bottom:.5rem">💝</div><div style="font-size:.82rem;font-weight:500;margin-bottom:.25rem">Inclusivo</div><div style="font-size:.75rem;color:var(--gray-600)">Para todos os estilos</div></div>
+        <div style="background:var(--gray-50);padding:1.5rem;border-left:2px solid var(--gold)"><div style="font-size:1.5rem;margin-bottom:.5rem">🏆</div><div style="font-size:.82rem;font-weight:500;margin-bottom:.25rem">Premiado</div><div style="font-size:.75rem;color:var(--gray-600)">Melhor e-commerce 2024</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ PAGE: COMPARAR ═══════════ -->
+<div class="page" id="page-comparar" style="padding-top:70px;min-height:100vh">
+  <div class="section">
+    <div class="s-tag">Comparação</div>
+    <h1 class="s-title" style="margin-bottom:3rem">Comparar <em>Produtos</em></h1>
+    <div id="compareGrid"></div>
+  </div>
+</div>
+
+<!-- ═══════════ PAGE: WISHLIST ═══════════ -->
+<div class="page" id="page-wishlist" style="padding-top:70px;min-height:100vh">
+  <div class="section">
+    <div class="s-tag">Minha Lista</div>
+    <h1 class="s-title" style="margin-bottom:3rem">Meus <em>Favoritos</em></h1>
+    <div id="wishlistGrid"></div>
+  </div>
+</div>
+
+<!-- ═══════════ PAGE: CONTA ═══════════ -->
+<div class="page" id="page-conta">
+  <div class="account-layout">
+    <div class="account-nav">
+      <div class="account-avatar" id="accAvatar">M</div>
+      <div class="account-name" id="accName">Mariana Silva</div>
+      <div class="account-email" id="accEmail">mariana@email.com</div>
+      <ul class="account-menu">
+        <li><a onclick="accTab('pedidos')" id="am-pedidos" class="on">📦 Meus Pedidos</a></li>
+        <li><a onclick="accTab('pontos')" id="am-pontos">⭐ Pontos & Fidelidade</a></li>
+        <li><a onclick="accTab('enderecos')" id="am-enderecos">📍 Endereços</a></li>
+        <li><a onclick="accTab('pagamentos')" id="am-pagamentos">💳 Pagamentos</a></li>
+        <li><a onclick="accTab('dados')" id="am-dados">👤 Meus Dados</a></li>
+        <li><a onclick="accTab('avaliacoes')" id="am-avaliacoes">⭐ Avaliações</a></li>
+        <li><a onclick="logout()" style="color:var(--red)!important">🚪 Sair</a></li>
+      </ul>
+    </div>
+    <div class="account-content">
+      <!-- PEDIDOS -->
+      <div class="account-section on" id="as-pedidos">
+        <h2 class="account-section-title">Meus Pedidos</h2>
+        <p class="account-section-sub">Acompanhe o status dos seus pedidos</p>
+        <div class="orders-list" id="ordersList"></div>
+      </div>
+      <!-- PONTOS -->
+      <div class="account-section" id="as-pontos">
+        <h2 class="account-section-title">Programa de Fidelidade</h2>
+        <p class="account-section-sub">Acumule pontos e troque por descontos</p>
+        <div class="points-card" id="loyaltyCardContainer"></div>
+        
+        <h3 style="font-family:var(--font-display);font-size:1.3rem;margin-bottom:1.25rem">Resgatar Prêmios</h3>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:3rem">
+          <div style="border:1px solid var(--gray-200);padding:1.5rem;background:var(--white);display:flex;flex-direction:column;justify-content:space-between">
+            <div>
+              <div style="font-size:1.5rem;margin-bottom:.5rem">🎫</div>
+              <strong style="font-size:.9rem">Cupom R$ 25 de Desconto</strong>
+              <p style="font-size:.78rem;color:var(--gray-600);margin-top:.25rem">Resgate com 500 pontos. Válido em qualquer produto.</p>
+            </div>
+            <button class="step-btn" style="margin-top:1.5rem;padding:8px 12px;font-size:.68rem" onclick="redeemPoints(500, 25)">Resgatar por 500 pts</button>
+          </div>
+          <div style="border:1px solid var(--gray-200);padding:1.5rem;background:var(--white);display:flex;flex-direction:column;justify-content:space-between">
+            <div>
+              <div style="font-size:1.5rem;margin-bottom:.5rem">🎁</div>
+              <strong style="font-size:.9rem">Cupom R$ 60 de Desconto</strong>
+              <p style="font-size:.78rem;color:var(--gray-600);margin-top:.25rem">Resgate com 1000 pontos. Válido em qualquer produto.</p>
+            </div>
+            <button class="step-btn" style="margin-top:1.5rem;padding:8px 12px;font-size:.68rem" onclick="redeemPoints(1000, 60)">Resgatar por 1000 pts</button>
+          </div>
+        </div>
+
+        <div id="activeRedeemedCouponsSection" class="hidden" style="margin-bottom:3rem;background:rgba(201,168,76,.05);border:1px solid var(--gold);padding:1.5rem">
+          <h4 style="font-family:var(--font-display);font-size:1.15rem;color:var(--gold);margin-bottom:.75rem">Seus Cupons de Desconto Resgatados</h4>
+          <div id="activeRedeemedCouponsList" style="display:flex;flex-direction:column;gap:.5rem"></div>
+        </div>
+
+        <h3 style="font-family:var(--font-display);font-size:1.3rem;margin-bottom:1.25rem">Como ganhar pontos</h3>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+          <div style="border:1px solid var(--gray-200);padding:1.25rem"><div style="font-size:1.5rem;margin-bottom:.5rem">🛍️</div><strong style="font-size:.85rem">Comprar</strong><p style="font-size:.78rem;color:var(--gray-600);margin-top:.25rem">1 ponto por R$ 1 gasto</p></div>
+          <div style="border:1px solid var(--gray-200);padding:1.25rem"><div style="font-size:1.5rem;margin-bottom:.5rem">⭐</div><strong style="font-size:.85rem">Avaliar</strong><p style="font-size:.78rem;color:var(--gray-600);margin-top:.25rem">50 pontos por avaliação</p></div>
+          <div style="border:1px solid var(--gray-200);padding:1.25rem"><div style="font-size:1.5rem;margin-bottom:.5rem">👭</div><strong style="font-size:.85rem">Indicar</strong><p style="font-size:.78rem;color:var(--gray-600);margin-top:.25rem">200 pontos por indicação</p></div>
+          <div style="border:1px solid var(--gray-200);padding:1.25rem"><div style="font-size:1.5rem;margin-bottom:.5rem">🎂</div><strong style="font-size:.85rem">Aniversário</strong><p style="font-size:.78rem;color:var(--gray-600);margin-top:.25rem">300 pontos de presente</p></div>
+        </div>
+      </div>
+      <!-- ENDEREÇOS -->
+      <div class="account-section" id="as-enderecos">
+        <h2 class="account-section-title">Endereços Salvos</h2>
+        <p class="account-section-sub">Gerencie seus endereços de entrega</p>
+        <div class="address-cards" id="addressCardsList"></div>
+        <button class="btn-sm primary" style="margin-top:1.5rem" onclick="openAddressForm()">+ Novo Endereço</button>
+        
+        <!-- Formulário Dinâmico de Novo/Editar Endereço (Inline) -->
+        <div id="addressFormContainer" class="hidden" style="margin-top:2rem;border:1px solid var(--gray-200);padding:1.5rem;border-radius:12px;background:var(--white)">
+          <h3 style="font-family:var(--font-display);font-size:1.3rem;margin-bottom:1rem" id="addrFormTitle">Adicionar Novo Endereço</h3>
+          <input type="hidden" id="addr-id">
+          <div class="fg"><label>Apelido do Endereço (Ex: Casa, Trabalho)</label><input type="text" id="addr-tag" placeholder="Ex: Casa, Trabalho"></div>
+          <div class="fg"><label>Nome do Destinatário</label><input type="text" id="addr-fullname" placeholder="Nome Completo"></div>
+          <div class="frow">
+            <div class="fg"><label>CEP</label><input type="text" id="addr-cep" placeholder="00000-000" oninput="fetchAddrCEP(this.value)"></div>
+            <div class="fg" style="justify-content:flex-end;padding-bottom:10px"><span id="addrCepStatus" style="font-size:.72rem;color:var(--gold)"></span></div>
+          </div>
+          <div class="fg"><label>Rua / Logradouro</label><input type="text" id="addr-rua" placeholder="Av, Rua, Travessa..."></div>
+          <div class="frow">
+            <div class="fg"><label>Número</label><input type="text" id="addr-numero" placeholder="123"></div>
+            <div class="fg"><label>Complemento</label><input type="text" id="addr-complemento" placeholder="Apto, Bloco, Cj..."></div>
+          </div>
+          <div class="frow">
+            <div class="fg"><label>Bairro</label><input type="text" id="addr-bairro" placeholder="Bairro"></div>
+            <div class="fg"><label>Cidade</label><input type="text" id="addr-cidade" placeholder="Cidade"></div>
+          </div>
+          <div class="fg"><label>Estado (UF)</label><input type="text" id="addr-estado" placeholder="SP, RJ..."></div>
+          <div style="display:flex;align-items:center;gap:.75rem;margin-top:1rem;margin-bottom:1rem">
+            <input type="checkbox" id="addr-default-chk"><label for="addr-default-chk" style="font-size:.8rem;cursor:pointer">Definir como endereço padrão</label>
+          </div>
+          <div style="display:flex;gap:.5rem">
+            <button class="step-btn" style="max-width:200px" onclick="saveAddress()">Salvar Endereço</button>
+            <button class="step-btn-back" style="max-width:140px;margin-top:0" onclick="closeAddressForm()">Cancelar</button>
+          </div>
+        </div>
+      </div>
+      <!-- DADOS -->
+      <div class="account-section" id="as-dados">
+        <h2 class="account-section-title">Meus Dados</h2>
+        <p class="account-section-sub">Atualize suas informações pessoais</p>
+        <div style="max-width:500px">
+          <div class="frow"><div class="fg"><label>Nome</label><input type="text" id="acc-firstname" value="Mariana"></div><div class="fg"><label>Sobrenome</label><input type="text" id="acc-lastname" value="Silva"></div></div>
+          <div class="fg"><label>E-mail</label><input type="email" id="acc-email" value="mariana@email.com"></div>
+          <div class="fg"><label>Telefone</label><input type="tel" id="acc-phone" value="(11) 99999-0000"></div>
+          <div class="fg"><label>CPF</label><input type="text" id="acc-cpf" value="000.000.000-00"></div>
+          <div class="fg"><label>Data de Nascimento</label><input type="date" id="acc-birth" value="1990-05-15"></div>
+          <div style="margin-top:1.5rem;border-top:1px solid var(--gray-200);padding-top:1.5rem">
+            <h3 style="font-family:var(--font-display);font-size:1.2rem;margin-bottom:1rem">Alterar Senha</h3>
+            <div class="fg"><label>Senha Atual</label><input type="password" placeholder="••••••••"></div>
+            <div class="frow"><div class="fg"><label>Nova Senha</label><input type="password" placeholder="••••••••"></div><div class="fg"><label>Confirmar</label><input type="password" placeholder="••••••••"></div></div>
+          </div>
+          <button class="step-btn" style="max-width:200px;margin-top:1.5rem" onclick="saveProfile()">Salvar</button>
+        </div>
+      </div>
+      <!-- PAGAMENTOS -->
+      <div class="account-section" id="as-pagamentos">
+        <h2 class="account-section-title">Meios de Pagamento</h2>
+        <p class="account-section-sub">Gerencie seus cartões salvos com segurança</p>
+        <div id="savedCardsList" style="margin-bottom:1.5rem"></div>
+        <div style="border:1px solid var(--gray-200);padding:1.25rem;border-radius:12px;background:var(--white)">
+          <div style="font-weight:600;margin-bottom:.75rem">Adicionar novo cartão</div>
+          <div class="frow"><div class="fg"><label>Número do Cartão</label><input type="text" id="acc-card-number" placeholder="0000 0000 0000 0000"></div><div class="fg"><label>Validade</label><input type="text" id="acc-card-exp" placeholder="MM/AA"></div></div>
+          <div class="fg"><label>Nome no Cartão</label><input type="text" id="acc-card-name" placeholder="NOME SOBRENOME"></div>
+          <div style="display:flex;align-items:center;gap:.75rem;margin-top:1rem"><input type="checkbox" id="acc-card-save"><label for="acc-card-save">Salvar este cartão</label></div>
+          <button class="step-btn" style="max-width:220px;margin-top:1rem" onclick="saveCardFromAccount()">Salvar Cartão</button>
+        </div>
+      </div>
+      <!-- AVALIAÇÕES -->
+      <div class="account-section" id="as-avaliacoes">
+        <h2 class="account-section-title">Minhas Avaliações</h2>
+        <p class="account-section-sub">Avalie os produtos que você comprou</p>
+        <div id="myReviewsList"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ PAGE: ADMIN ═══════════ -->
+<div class="page" id="page-admin" style="padding-top:70px;min-height:100vh;background:var(--gray-50)">
+  <div style="max-width:1280px;margin:0 auto;padding:3rem 2rem">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:3rem">
+      <div><div class="s-tag">Painel</div><h1 style="font-family:var(--font-display);font-size:2.5rem">Admin <em>Dashboard</em></h1></div>
+      <button class="step-btn" style="max-width:180px" onclick="openAddProduct()">+ Novo Produto</button>
+    </div>
+    <!-- METRICS -->
+    <div class="admin-metrics-grid" id="adminMetrics"></div>
+    <!-- ORDERS TABLE -->
+    <div style="background:var(--white);border:1px solid var(--gray-200);margin-bottom:2rem">
+      <div style="padding:1.25rem 1.5rem;border-bottom:1px solid var(--gray-200);display:flex;justify-content:space-between;align-items:center">
+        <h3 style="font-family:var(--font-display);font-size:1.3rem">Pedidos Recentes</h3>
+        <span style="font-size:.72rem;color:var(--gray-400)">Últimos 30 dias</span>
+      </div>
+      <div style="overflow-x:auto" id="adminOrdersTable"></div>
+    </div>
+    <!-- PRODUCTS TABLE -->
+    <div style="background:var(--white);border:1px solid var(--gray-200)">
+      <div style="padding:1.25rem 1.5rem;border-bottom:1px solid var(--gray-200);display:flex;justify-content:space-between;align-items:center">
+        <h3 style="font-family:var(--font-display);font-size:1.3rem">Estoque de Produtos</h3>
+        <input type="text" placeholder="Buscar produto..." style="border:1px solid var(--gray-200);padding:8px 12px;font-size:.8rem;outline:none;width:200px" oninput="filterAdminProds(this.value)">
+      </div>
+      <div style="overflow-x:auto" id="adminProdsTable"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ CART SIDEBAR ═══════════════ -->
+<div class="overlay" id="cartOv" onclick="closeCart()"></div>
+<div class="cart-side" id="cartSide">
+  <div class="cart-hd">
+    <div>
+      <div class="cart-hd-title">Carrinho</div>
+      <div class="cart-hd-count" id="cartHdCount">0 itens</div>
+    </div>
+    <button class="x-btn" onclick="closeCart()">✕</button>
+  </div>
+  <div class="cart-body" id="cartBody"></div>
+  <div class="cart-ft" id="cartFt" style="display:none">
+    <div style="margin-bottom:1rem">
+      <div class="coupon-row">
+        <input type="text" class="coupon-input" id="couponInput" placeholder="Código de desconto">
+        <button class="coupon-btn" onclick="applyCoupon()">Aplicar</button>
+      </div>
+    </div>
+    <div class="cart-lines">
+      <div class="cart-line"><span>Subtotal</span><span id="cSubtotal">R$ 0</span></div>
+      <div class="cart-line disc" id="cDiscLine" style="display:none"><span>Desconto</span><span id="cDisc">-R$ 0</span></div>
+      <div class="cart-line"><span>Frete</span><span style="color:var(--gold)">Grátis ✓</span></div>
+    </div>
+    <div class="cart-total-row"><span>Total</span><span id="cTotal">R$ 0</span></div>
+    <button class="checkout-cta" onclick="openCheckout()">Finalizar Compra</button>
+    <button class="continue-shop" onclick="closeCart()">Continuar Comprando</button>
+  </div>
+</div>
+
+<!-- ═══════════════ PRODUCT MODAL ═══════════════ -->
+<div class="modal-overlay" id="prodOv" onclick="closeProdModal(event)">
+  <div class="prod-modal" id="prodModal">
+    <button class="prod-modal-close" onclick="closeProdModal()">✕</button>
+    <div class="prod-modal-img" id="pmImg"></div>
+    <div class="prod-modal-info" id="pmInfo"></div>
+  </div>
+</div>
+
+<!-- ═══════════════ AUTH MODAL ═══════════════ -->
+<div class="modal-overlay" id="authOv" onclick="closeAuth(event)">
+  <div class="auth-modal">
+    <button class="x-btn" onclick="closeAuth()" style="position:absolute;top:1.5rem;right:1.5rem">✕</button>
+    <h2 class="auth-title">Bem-vinda</h2>
+    <p class="auth-sub">Acesse sua conta ou crie uma nova</p>
+    <div class="auth-tabs">
+      <button class="auth-tab on" id="at-login" onclick="authSwitch('login')">Entrar</button>
+      <button class="auth-tab" id="at-signup" onclick="authSwitch('signup')">Criar Conta</button>
+    </div>
+    <div class="social-auth">
+      <button class="social-auth-btn" onclick="socialLogin('Google')">🔍 Google</button>
+      <button class="social-auth-btn" onclick="socialLogin('Facebook')">💙 Facebook</button>
+    </div>
+    <div class="auth-divider">ou</div>
+    <div id="authForm"></div>
+  </div>
+</div>
+
+<!-- ═══════════════ CHECKOUT MODAL ═══════════════ -->
+<div class="modal-overlay" id="checkOv">
+  <div class="modal" id="checkModal">
+    <div class="modal-hd">
+      <div>
+        <div class="modal-title">Finalizar Pedido</div>
+        <div class="steps-bar">
+          <div class="step-dot active" id="sd1"></div>
+          <div class="step-dot" id="sd2"></div>
+          <div class="step-dot" id="sd3"></div>
+          <span class="step-label active" id="sl1">Dados</span>
+        </div>
+      </div>
+      <button class="x-btn" onclick="closeCheckout()">✕</button>
+    </div>
+    <div class="modal-body" id="checkBody"></div>
+    <div class="success-screen hidden" id="successScreen"></div>
+  </div>
+</div>
+
+<!-- ═══════════════ ADD PRODUCT MODAL ═══════════════ -->
+<div class="modal-overlay" id="addProdOv" onclick="closeAddProduct(event)">
+  <div class="modal" style="max-width:560px">
+    <div class="modal-hd">
+      <div class="modal-title" id="addProdTitle">Novo Produto</div>
+      <button class="x-btn" onclick="closeAddProduct()">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="frow"><div class="fg"><label>Nome</label><input type="text" id="apName" placeholder="Nome do produto"></div><div class="fg"><label>Categoria</label><select id="apCat"><option>Lace Front</option><option>Natural</option><option>Cacheada</option><option>Liso</option><option>Bob</option><option>Full Lace</option></select></div></div>
+      <div class="frow"><div class="fg"><label>Preço (R$)</label><input type="number" id="apPrice" placeholder="890"></div><div class="fg"><label>Preço Antigo (R$)</label><input type="number" id="apOld" placeholder="Opcional"></div></div>
+      <div class="frow"><div class="fg"><label>Estoque</label><input type="number" id="apStock" placeholder="50"></div><div class="fg"><label>Emoji</label><input type="text" id="apEmoji" placeholder="👩‍🦱"></div></div>
+      <div class="fg"><label>Descrição</label><textarea id="apDesc" style="border:1px solid var(--gray-200);padding:11px;font-size:.88rem;outline:none;resize:vertical;min-height:80px" placeholder="Descreva o produto..."></textarea></div>
+      <div class="frow"><div class="fg"><label>Badge</label><select id="apBadge"><option value="">Nenhum</option><option value="Novo">Novo</option><option value="Sale">Sale</option><option value="Best seller">Best Seller</option><option value="Premium">Premium</option></select></div><div class="fg"><label>Em destaque</label><select id="apFeatured"><option value="0">Não</option><option value="1">Sim</option></select></div></div>
+      <div style="border-top:1px solid var(--gray-200);padding-top:1rem;margin-top:.5rem">
+        <div style="font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-400);margin-bottom:.75rem">Imagens do Produto (URLs)</div>
+        <div class="fg"><label>Imagem Principal</label><input type="url" id="apImg1" placeholder="https://exemplo.com/foto1.jpg"></div>
+        <div class="fg"><label>Imagem 2</label><input type="url" id="apImg2" placeholder="https://exemplo.com/foto2.jpg"></div>
+        <div class="fg"><label>Imagem 3</label><input type="url" id="apImg3" placeholder="https://exemplo.com/foto3.jpg"></div>
+      </div>
+      <button class="step-btn" onclick="saveProduct()">Salvar Produto</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ COMPARE BAR ═══════════════ -->
+<div class="compare-bar" id="compareBar">
+  <span style="font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-400)">Comparar:</span>
+  <div class="compare-items-mini" id="compareItemsMini"></div>
+  <button class="btn-compare" onclick="goPage('comparar')">Comparar Agora</button>
+  <button class="x-btn" onclick="clearCompare()" style="color:var(--gray-400)">✕</button>
+</div>
+
+<!-- ═══════════ ZOOM OVERLAY ═══════════ -->
+<div class="zoom-overlay" id="zoomOverlay" onclick="closeZoom(event)">
+  <button class="zoom-close" onclick="closeZoom()">✕</button>
+  <img class="zoom-img" id="zoomImg" src="" alt="Zoom">
+</div>
+
+<!-- ═══════════ EMAIL PREVIEW MODAL ═══════════ -->
+<div class="modal-overlay" id="emailOv" onclick="closeEmailModal(event)">
+  <div class="modal" style="max-width:580px">
+    <div class="modal-hd">
+      <div class="modal-title">📧 E-mail de confirmação</div>
+      <button class="x-btn" onclick="closeEmailModal()">✕</button>
+    </div>
+    <div class="modal-body" id="emailBody"></div>
+  </div>
+</div>
+
+<!-- ═══════════ PAGE: COMO USAR ═══════════ -->
+<div class="page" id="page-comousar" style="padding-top:70px;min-height:100vh">
+  <div style="background:var(--black);padding:6rem 0 4rem">
+    <div style="max-width:700px;margin:0 auto;padding:0 2rem;text-align:center">
+      <div class="s-tag" style="justify-content:center;color:var(--gold)">Tutorial</div>
+      <h1 style="font-family:var(--font-display);font-size:3.5rem;font-weight:300;color:var(--white);line-height:1.1;margin-bottom:1rem">Como <em style="color:var(--gold)">usar</em> sua peruca</h1>
+      <p style="color:var(--gray-400);font-size:.88rem;line-height:1.8">Guia completo para colocar, fixar e cuidar da sua peruca com segurança e elegância.</p>
+    </div>
+  </div>
+  <div class="section" style="max-width:860px;margin:0 auto">
+    <div class="howto-video" onclick="toast('▶ Vídeo em breve no nosso canal!')">
+      <div class="howto-video-play">▶</div>
+      <p style="color:var(--gray-400);font-size:.82rem">Tutorial em vídeo — disponível em breve</p>
+    </div>
+    <div class="s-tag">Passo a Passo</div>
+    <h2 class="s-title" style="margin-bottom:3rem">Guia <em>completo</em></h2>
+    <div class="howto-steps">
+      <div class="howto-step">
+        <div class="howto-num">01</div>
+        <div class="howto-content">
+          <h3>Prepare seu cabelo natural</h3>
+          <p>Antes de colocar a peruca, lave e condicione seu cabelo. Para cabelos compridos, faça um coque baixo ou tranças para achatar ao máximo.</p>
+          <ul>
+            <li>Use uma touca de peruca para cobrir completamente o cabelo</li>
+            <li>Certifique-se que o cabelo está seco antes de colocar</li>
+            <li>Aplique um mousse leve para fixar fios soltos</li>
+            <li>Alise as bordas com gel para um visual mais natural</li>
+          </ul>
+        </div>
+      </div>
+      <div class="howto-step">
+        <div class="howto-num">02</div>
+        <div class="howto-content">
+          <h3>Posicione a peruca corretamente</h3>
+          <p>Segure a peruca pela frente e pelas costas, inclinando a cabeça levemente para frente. Coloque a parte frontal primeiro, depois posicione a parte de trás.</p>
+          <ul>
+            <li>Alinhe a lace com sua linha natural do cabelo</li>
+            <li>Ajuste as faixas laterais para um encaixe perfeito</li>
+            <li>Certifique-se que as orelhas estão posicionadas corretamente</li>
+            <li>Use o espelho traseiro para conferir o alinhamento</li>
+          </ul>
+        </div>
+      </div>
+      <div class="howto-step">
+        <div class="howto-num">03</div>
+        <div class="howto-content">
+          <h3>Fixe com segurança</h3>
+          <p>Para uma fixação duradoura, use cola de peruca ou fita adesiva específica. Para uso diário sem cola, os pentes e elásticos internos são suficientes.</p>
+          <ul>
+            <li>Aplique cola apenas na linha frontal e laterais</li>
+            <li>Aguarde 30 segundos antes de pressionar a lace</li>
+            <li>Use um pano úmido para remover o excesso de cola</li>
+            <li>Nunca use fita dupla-face comum — pode danificar a lace</li>
+          </ul>
+        </div>
+      </div>
+      <div class="howto-step">
+        <div class="howto-num">04</div>
+        <div class="howto-content">
+          <h3>Estilize ao seu gosto</h3>
+          <p>Perucas de cabelo humano aceitam calor, tinta e qualquer estilização. Sintéticas têm restrições — verifique o manual específico do produto.</p>
+          <ul>
+            <li>Use protetor térmico antes de qualquer calor</li>
+            <li>Temperatura máxima recomendada: 180°C (cabelo humano)</li>
+            <li>Penteie sempre da ponta para a raiz para evitar quebra</li>
+            <li>Evite escovar a peruca seca — use spray umidificador</li>
+          </ul>
+        </div>
+      </div>
+      <div class="howto-step">
+        <div class="howto-num">05</div>
+        <div class="howto-content">
+          <h3>Cuidados e conservação</h3>
+          <p>Com os cuidados certos, sua peruca pode durar muito mais tempo. Lave regularmente e armazene corretamente para preservar a qualidade dos fios.</p>
+          <ul>
+            <li>Lave a cada 10–15 dias de uso (ou conforme necessário)</li>
+            <li>Use shampoo e condicionador sem sulfato</li>
+            <li>Deixe secar naturalmente — evite o secador nas sintéticas</li>
+            <li>Armazene em suporte de peruca ou saco de cetim</li>
+            <li>Nunca durma com a peruca sem uma proteção</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:4rem">
+      <div class="s-tag">Dicas Extras</div>
+      <h2 class="s-title" style="margin-bottom:2rem">Cuidados <em>essenciais</em></h2>
+      <div class="tips-grid">
+        <div class="tip-card"><div class="tip-icon">💧</div><div class="tip-title">Hidratação</div><div class="tip-text">Aplique máscara de hidratação a cada 2 lavagens para manter os fios macios e com brilho natural.</div></div>
+        <div class="tip-card"><div class="tip-icon">☀️</div><div class="tip-title">Proteção Solar</div><div class="tip-text">Use spray UV antes de sair ao sol. A exposição excessiva pode desbotar a cor e ressecar os fios.</div></div>
+        <div class="tip-card"><div class="tip-icon">🌙</div><div class="tip-title">Armazenamento</div><div class="tip-text">Guarde em suporte de cabeça em local seco e longe do sol. Nunca armazene úmida ou amassada.</div></div>
+        <div class="tip-card"><div class="tip-icon">✂️</div><div class="tip-title">Aparagem</div><div class="tip-text">Agendar um corte suave a cada 3 meses ajuda a manter o visual fresco e eliminar as pontas duplas.</div></div>
+        <div class="tip-card"><div class="tip-icon">🧴</div><div class="tip-title">Produtos Certos</div><div class="tip-text">Use apenas produtos sem sulfato, parabenos ou álcool. Produtos agressivos reduzem a vida útil da peruca.</div></div>
+        <div class="tip-card"><div class="tip-icon">💆‍♀️</div><div class="tip-title">Couro Cabeludo</div><div class="tip-text">Hidrate o couro cabeludo natural semanalmente com óleos leves para evitar ressecamento e coceira.</div></div>
+      </div>
+    </div>
+
+    <div style="margin-top:4rem;background:var(--black);padding:3rem;text-align:center">
+      <div class="s-tag" style="justify-content:center;color:var(--gold)">Ainda tem dúvidas?</div>
+      <h3 style="font-family:var(--font-display);font-size:2rem;color:var(--white);margin:.75rem 0">Fale com nossa equipe</h3>
+      <p style="color:var(--gray-400);font-size:.85rem;margin-bottom:2rem">Nossa equipe de especialistas está pronta para te ajudar a escolher e usar sua peruca perfeita.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+        <button class="btn-white" onclick="toggleWa()">💬 WhatsApp</button>
+        <button class="btn-outline-white" onclick="goPage('faq')">Ver FAQ →</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ PAGE: CONTATO ═══════════ -->
+<div class="page" id="page-contato" style="padding-top:70px;min-height:100vh">
+  <div style="background:var(--black);padding:5rem 0 4rem">
+    <div style="max-width:600px;margin:0 auto;padding:0 2rem;text-align:center">
+      <div class="s-tag" style="justify-content:center;color:var(--gold)">Fale Conosco</div>
+      <h1 style="font-family:var(--font-display);font-size:3.5rem;font-weight:300;color:var(--white);line-height:1.1;margin-bottom:1rem">Entre em <em style="color:var(--gold)">contato</em></h1>
+      <p style="color:var(--gray-400);font-size:.88rem;line-height:1.8">Nossa equipe responde em minutos pelo WhatsApp e em até 24h por e-mail.</p>
+    </div>
+  </div>
+  <div class="section" style="max-width:980px;margin:0 auto">
+    <div class="contato-layout">
+
+      <!-- INFO -->
+      <div class="contato-info">
+        <h2 style="font-family:var(--font-display);font-size:1.8rem;margin-bottom:2rem">Canais de <em>atendimento</em></h2>
+        <div class="contato-card">
+          <div class="contato-card-icon">💬</div>
+          <div>
+            <div class="contato-card-label">WhatsApp (preferencial)</div>
+            <a class="contato-card-value" href="https://wa.me/5519994368778" target="_blank" rel="noopener">(19) 99436-8778</a>
+            <div class="contato-card-sub">Resposta em minutos — seg a sáb, 9h–20h</div>
+          </div>
+        </div>
+        <div class="contato-card">
+          <div class="contato-card-icon">✉️</div>
+          <div>
+            <div class="contato-card-label">E-mail</div>
+            <a class="contato-card-value" href="mailto:Rafaelmuller111222333444@gmail.com">Rafaelmuller111222333444@gmail.com</a>
+            <div class="contato-card-sub">Resposta em até 24h úteis</div>
+          </div>
+        </div>
+        <div class="contato-card">
+          <div class="contato-card-icon">📱</div>
+          <div>
+            <div class="contato-card-label">Chave PIX</div>
+            <div class="contato-card-value">CPF do titular</div>
+            <div class="contato-card-sub">Pagamento instantâneo com 5% de desconto</div>
+          </div>
+        </div>
+        <div class="contato-card">
+          <div class="contato-card-icon">🕐</div>
+          <div>
+            <div class="contato-card-label">Horário de Atendimento</div>
+            <div class="contato-card-value">Seg – Sáb: 9h às 20h</div>
+            <div class="contato-card-sub">Domingos e feriados: 10h às 16h</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORMULÁRIO -->
+      <div class="contato-form-wrap">
+        <h2 style="font-family:var(--font-display);font-size:1.8rem;margin-bottom:2rem">Envie uma <em>mensagem</em></h2>
+        <div class="frow">
+          <div class="fg"><label>Nome</label><input type="text" id="ctNome" placeholder="Seu nome completo"></div>
+          <div class="fg"><label>Telefone</label><input type="tel" id="ctTel" placeholder="(00) 00000-0000"></div>
+        </div>
+        <div class="fg"><label>E-mail</label><input type="email" id="ctEmail" placeholder="seu@email.com"></div>
+        <div class="fg"><label>Assunto</label>
+          <select id="ctAssunto">
+            <option value="">Selecione um assunto...</option>
+            <option>Dúvida sobre produto</option>
+            <option>Rastrear pedido</option>
+            <option>Troca ou devolução</option>
+            <option>Pagamento</option>
+            <option>Orçamento personalizado</option>
+            <option>Outro</option>
+          </select>
+        </div>
+        <div class="fg"><label>Mensagem</label><textarea id="ctMsg" style="border:1px solid var(--gray-200);padding:11px 13px;font-size:.88rem;outline:none;resize:vertical;min-height:130px;transition:var(--t)" placeholder="Descreva sua dúvida com detalhes..." onfocus="this.style.borderColor='var(--black)'" onblur="this.style.borderColor='var(--gray-200)'"></textarea></div>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap">
+          <button class="step-btn" style="flex:1;min-width:180px" onclick="enviarContato()">📧 Enviar por E-mail</button>
+          <button class="btn-outline-wa" onclick="enviarContatoWA()">💬 Enviar pelo WhatsApp</button>
+        </div>
+        <p style="font-size:.72rem;color:var(--gray-400);margin-top:1rem">Ao enviar, você concorda com nossa <a onclick="goPage('privacidade')" style="color:var(--black);border-bottom:1px solid var(--gray-200);cursor:pointer">Política de Privacidade</a>.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ PAGE: PRIVACIDADE ═══════════ -->
+<div class="page" id="page-privacidade" style="padding-top:70px;min-height:100vh">
+  <div class="section" style="max-width:760px;margin:0 auto">
+    <div class="s-tag">Legal</div>
+    <h1 class="s-title" style="margin-bottom:.5rem">Política de <em>Privacidade</em></h1>
+    <p style="font-size:.78rem;color:var(--gray-400);margin-bottom:3rem">Última atualização: maio de 2025 · Em conformidade com a LGPD (Lei 13.709/2018)</p>
+
+    <div class="privacidade-content">
+      <h2>1. Quem somos</h2>
+      <p>Rafael Muller Perucas e Próteses Capilares, CNPJ a definir, com sede no estado de São Paulo. E-mail de contato do DPO: <a href="mailto:Rafaelmuller111222333444@gmail.com">Rafaelmuller111222333444@gmail.com</a>.</p>
+
+      <h2>2. Quais dados coletamos</h2>
+      <p>Coletamos apenas os dados necessários para processar seu pedido e melhorar sua experiência:</p>
+      <ul>
+        <li><strong>Identificação:</strong> nome, CPF, data de nascimento</li>
+        <li><strong>Contato:</strong> e-mail, telefone/WhatsApp</li>
+        <li><strong>Entrega:</strong> endereço completo e CEP</li>
+        <li><strong>Navegação:</strong> cookies de sessão e preferências (com seu consentimento)</li>
+      </ul>
+
+      <h2>3. Como usamos seus dados</h2>
+      <ul>
+        <li>Processar e entregar seus pedidos</li>
+        <li>Enviar confirmações e atualizações de entrega</li>
+        <li>Responder dúvidas e solicitações de suporte</li>
+        <li>Melhorar nossos produtos e serviços</li>
+        <li>Enviar ofertas exclusivas (somente com seu consentimento)</li>
+      </ul>
+
+      <h2>4. Cookies</h2>
+      <p>Utilizamos cookies essenciais (necessários para o funcionamento do site) e cookies opcionais de análise. Você pode gerenciar suas preferências no banner exibido ao acessar o site. Cookies essenciais não podem ser desativados.</p>
+
+      <h2>5. Compartilhamento</h2>
+      <p>Não vendemos seus dados. Compartilhamos apenas com parceiros essenciais para a operação (processadoras de pagamento, transportadoras), que também seguem a LGPD.</p>
+
+      <h2>6. Seus direitos (LGPD Art. 18)</h2>
+      <ul>
+        <li>Confirmar se tratamos seus dados</li>
+        <li>Acessar e corrigir seus dados</li>
+        <li>Solicitar a exclusão de dados desnecessários</li>
+        <li>Revogar consentimento a qualquer momento</li>
+        <li>Portabilidade dos dados</li>
+      </ul>
+      <p>Para exercer seus direitos, envie e-mail para <a href="mailto:Rafaelmuller111222333444@gmail.com">Rafaelmuller111222333444@gmail.com</a>. Respondemos em até 15 dias úteis.</p>
+
+      <h2>7. Segurança</h2>
+      <p>Adotamos medidas técnicas e organizacionais para proteger seus dados contra acesso não autorizado, perda ou destruição.</p>
+
+      <h2>8. Retenção</h2>
+      <p>Mantemos seus dados pelo tempo necessário para cumprir a finalidade da coleta e obrigações legais (ex.: dados fiscais por 5 anos conforme legislação tributária).</p>
+
+      <h2>9. Contato</h2>
+      <p>Dúvidas sobre esta política? Fale conosco: <a href="mailto:Rafaelmuller111222333444@gmail.com">Rafaelmuller111222333444@gmail.com</a> ou <a href="https://wa.me/5519994368778" target="_blank" rel="noopener">(19) 99436-8778</a>.</p>
+    </div>
+
+    <div style="margin-top:3rem;background:var(--gray-50);padding:1.5rem;border-left:3px solid var(--gold)">
+      <p style="font-size:.82rem;color:var(--gray-600)">Esta política pode ser atualizada periodicamente. A versão mais recente estará sempre disponível nesta página.</p>
+    </div>
+  </div>
+</div>
+
+<!-- EmailJS — envio de e-mail automático ao cliente -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
+
